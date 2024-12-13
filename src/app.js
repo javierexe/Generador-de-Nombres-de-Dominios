@@ -1,11 +1,25 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+//write your code here
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
+let ext = [".com", ".net", ".us", ".io", ".cl"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+pronoun.forEach((pronombre) => {
+  adj.forEach((adjetivo) => {
+    noun.forEach((sujeto) => {
+      ext.forEach((extension) => {
+        let dominio = pronombre + adjetivo + sujeto + extension;
+        console.log(dominio);
+      });
+    });
+  });
+});
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+// thegreatjogger.com
+// thegreatracoon.com
+// ourgreatjogger.com
+// ourgreatracoon.com
+// thebigjogger.com
+// thebigracoon.com
+// ourbigjogger.com
+// ourbigracoon.com
